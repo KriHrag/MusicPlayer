@@ -46,7 +46,7 @@ public class MainSong extends AppCompatActivity {
         author = (TextView) findViewById(R.id.author);
 
         //Song Config
-        song1 = MediaPlayer.create(getApplicationContext(), R.raw.);
+        song1 = MediaPlayer.create(getApplicationContext(), R.raw.D-Panda.mp3);
 
         //Total time related items
         totalTimeMS = song1.getDuration();
@@ -94,7 +94,7 @@ public class MainSong extends AppCompatActivity {
         //Retrieving Specific Song Info
         MediaMetadataRetriever songInfo = new MediaMetadataRetriever();
 
-        Uri filepath= Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.);
+        Uri filepath= Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.D-Panda.mp3);
         songInfo.setDataSource(this, filepath);
 
         String songTitle = songInfo.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE);
