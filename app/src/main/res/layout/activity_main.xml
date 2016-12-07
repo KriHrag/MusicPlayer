@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.student.musicplayer.MainSong">
+    tools:context="com.example.student.musicplayer.MainActivity">
 
     <TextView
         android:id="@+id/name"
@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="\u266A Simple Music Player \u266A"
+        android:text="\u266A The Most OG Music Player \u266A"
         android:textSize="35sp"
         android:paddingBottom="16dp"/>
 

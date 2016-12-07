@@ -13,7 +13,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainSong extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     private MediaPlayer song1;
 
@@ -46,7 +46,7 @@ public class MainSong extends AppCompatActivity {
         author = (TextView) findViewById(R.id.author);
 
         //Song Config
-        song1 = MediaPlayer.create(getApplicationContext(), R.raw.DPanda.mp3);
+        song1 = MediaPlayer.create(getApplicationContext(), R.raw.dpanda);
 
         //Total time related items
         totalTimeMS = song1.getDuration();
@@ -94,7 +94,7 @@ public class MainSong extends AppCompatActivity {
         //Retrieving Specific Song Info
         MediaMetadataRetriever songInfo = new MediaMetadataRetriever();
 
-        Uri filepath= Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.DPanda.mp3);
+        Uri filepath= Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.dpanda);
         songInfo.setDataSource(this, filepath);
 
         String songTitle = songInfo.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE);
